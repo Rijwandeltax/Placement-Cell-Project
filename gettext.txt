@@ -1,0 +1,23 @@
+public class MainFrame{
+      //
+      public void actionPerformed(ActionEvent ev){
+
+       FrameOne frameOne = new FrameOne(userField.getText(), passField.getText());
+
+       //you've passed the user and pass to other frame.
+       // then you can make it visible.
+       frameOne.setVisible(true);
+     } 
+} 
+Your next frame
+
+public class FrameOne extends JFrame{
+  private String user;
+  private String pass;
+
+  public FrameOne(String usr, String pas){
+    this.user=usr;
+    this.pass=pas;
+    //define the components here
+ }
+}
